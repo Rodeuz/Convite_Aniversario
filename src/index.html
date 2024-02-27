@@ -7,14 +7,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles/main.scss" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="hero">
       <div class="container">
         <img class="hero__logo" src="./images/happy.png" alt="Feliz Aniversario" />
-        <p class="hero__text">Venha aproveitar e comemorar junto comigo <br /><span> meu aniversario</span></p>
+        <p class="hero__text">
+          Venha aproveitar e comemorar minha festa <br />
+          <b>Tempo para a festa começar</b><br /><span id="timer" class="tempo">00D 00H 00M 00S</span>
+        </p>
+        <div class="infos-bar">
+          <ul class="infos-bar__infos">
+            <li class="infos-bar__infos__items"><b>Localização</b> Salão do Dev</li>
+            <li class="infos-bar__infos__items"><b>Data</b> 08/01/2025</li>
+            <li class="infos-bar__infos__items"><b>Horário</b> a partir das 18:00</li>
+          </ul>
+        </div>
       </div>
     </header>
+    <section class="birthday birthday--party">
+      <div class="container" data-aos="fade-up">
+        <div class="birthday__details">
+          <h2 class="birthday__details__title">Convite</h2>
+          <p class="birthday__details__description">
+            Prepare-se para uma noite repleta de diversão, risadas e ótimas lembranças. Teremos música, dança, comida deliciosa e bebidas refrescantes. Estou ansioso para
+            compartilhar esse momento único com amigos e familiares queridos, e sua presença tornará a festa ainda mais especial.
+          </p>
+        </div>
+        <img class="birthday__image" src="./images/party.jpg" alt="Festa" />
+      </div>
+    </section>
+    <section class="birthday birthday--theme birthday--image-left">
+      <div class="container" data-aos="fade-up">
+        <div class="birthday__details">
+          <h2 class="birthday__details__title">Tema Neon</h2>
+
+          <p class="birthday__details__description">Venha com roupas brancas para poder brilhar mais sob as luzes neon e aproveitar ao máximo a festa</p>
+
+          <ul>
+            <h2 class="birthday__details__title">O que esperar:</h2>
+            <li>Decoração vibrante e cheia de cores neon para iluminar a pista de dança.</li>
+            <li>Música pulsante que fará você se mover a noite toda.</li>
+            <li>Bebidas refrescantes e brilhantes para manter a energia lá em cima.</li>
+            <li>Surpresas fluorescentes ao longo da noite.</li>
+          </ul>
+        </div>
+        <img class="birthday__image" src="./images/neon.jpeg" alt="Neon" />
+      </div>
+    </section>
+    <section class="birthday birthday--invite birthday--image-center">
+      <div class="container" data-aos="fade-up">
+        <h2 class="birthday__details__title">Conto com sua presença !!!</h2>
+      </div>
+    </section>
+    <footer class="Footer">Desenvolvido por @Rodeuz</footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
